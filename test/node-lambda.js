@@ -88,7 +88,7 @@ describe('bin/node-lambda', () => {
 
     describe('node-lambda run (Handler includes async processing)', () => {
       describe('callbackWaitsForEmptyEventLoop = true', function () {
-        this.timeout(5000) // give it time to setTimeout
+        this.timeout(6000) // give it time to setTimeout
 
         const eventObj = {
           asyncTest: true,
